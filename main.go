@@ -5,8 +5,8 @@ import (
 	"log"
 	"net/http"
 
+	"github.com/milesalex/tracer-demo/util"
 	"github.com/opentracing/opentracing-go"
-	"github.com/sunzhaochang/tracer-demo/util"
 )
 
 func main() {
@@ -31,5 +31,5 @@ func HelloServer(w http.ResponseWriter, r *http.Request) {
 	clientSpan := tracer.StartSpan("client")
 
 	fmt.Fprintf(w, "Hello, %s!", r.URL.Path[1:])
-	defer clientSpan.Finish()
+	clientSpan.Finish()
 }

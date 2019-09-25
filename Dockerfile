@@ -1,7 +1,7 @@
 FROM golang:1.12-alpine
 
 # Prepare the app directory
-WORKDIR /go/src/github.com/sunzhaochang/tracer-demo/
+WORKDIR /go/src/github.com/milesalex/tracer-demo/
 
 # Ensure dependancies are installed
 RUN apk add --update git && rm -rf /var/cache/apk/*

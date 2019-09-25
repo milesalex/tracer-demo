@@ -31,7 +31,7 @@
 
 [[constraint]]
   name = "github.com/uber/jaeger-client-go"
-  version = "2.16.0"
+  version = "2.17.0"
 
 [[constraint]]
   name = "github.com/uber/jaeger-lib"
