@@ -11,7 +11,6 @@ import (
 )
 
 func InitTracer() (io.Closer, error) {
-	log.Print("Init start")
 	cfg, err := jaegercfg.FromEnv()
 
 	if err != nil {
@@ -30,6 +29,5 @@ func InitTracer() (io.Closer, error) {
 	)
 
 	opentracing.SetGlobalTracer(tracer)
-	log.Print("Init finished")
 	return closer, err
 }

@@ -31,6 +31,5 @@ func HelloServer(w http.ResponseWriter, r *http.Request) {
 	clientSpan := tracer.StartSpan("client")
 
 	fmt.Fprintf(w, "Hello, %s!", r.URL.Path[1:])
-	fmt.Printf("Responded: Hello, %s!\n", r.URL.Path[1:])
 	clientSpan.Finish()
 }
