@@ -22,7 +22,7 @@
   version = "v0.8.1"
 
 [[projects]]
-  digest = "1:3b0ac1ac6f703e6d43f4e29c97da2c9e34465c66e2e19f9828e9841d1c9279a4"
+  digest = "1:b0fcdb2b7d3f20b60e024bb8c8be5a47d72c353f21e9a083fb1a226de4a94c43"
   name = "github.com/uber/jaeger-client-go"
   packages = [
     ".",
@@ -44,24 +44,22 @@
     "utils",
   ]
   pruneopts = "UT"
-  revision = "2f47546e3facd43297739439600bcf43f44cce5d"
-  version = "v2.16.0"
+  revision = "d4d621cd6ed9aa5f1fc91eb0d0211d336bd6b79d"
+  version = "v2.19.0"
 
 [[projects]]
-  digest = "1:c9d69a04f7fa171f50360bbcc32196b4de8ab8837ef772f6302d0140a1e3e7f6"
+  digest = "1:d7b6fd08442b8d26882fae2c859a0d63962d72a533476a217d46743ed30cb803"
   name = "github.com/uber/jaeger-lib"
   packages = ["metrics"]
   pruneopts = "UT"
-  revision = "0e30338a695636fe5bcf7301e8030ce8dd2a8530"
-  version = "v2.0.0"
+  revision = "a87ae9d84fb038a8d79266298970720be7c80fcd"
+  version = "v2.2.0"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
     "github.com/opentracing/opentracing-go",
-    "github.com/opentracing/opentracing-go/ext",
-    "github.com/uber/jaeger-client-go",
     "github.com/uber/jaeger-client-go/config",
     "github.com/uber/jaeger-client-go/log",
     "github.com/uber/jaeger-lib/metrics",
