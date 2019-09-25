@@ -1,13 +1,10 @@
-# Quick Start
+# Jaeger demo
 
-1. Run jaeger locally via docker:
+Run:
 
-	`docker run -d -p 5775:5775/udp -p 16686:16686 jaegertracing/all-in-one:latest`
+```
+docker-compose up
+```
 
-2. Run the tracer demo:
-
-	`go run server/server.go`
-	
-	`go run client/client.go`
-
-3. View your trace at localhost:16686
+- Go to http://localhost:8000 to trigger trace
+- Go to http://localhost:16686/search to see jaeger
