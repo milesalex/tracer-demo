@@ -1,0 +1,7 @@
+  
+.DS_Store
+.idea/*
+*.local
+vendor/
+__debug_bin
+pub-sub.json
